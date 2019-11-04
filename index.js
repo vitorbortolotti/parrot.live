@@ -97,7 +97,7 @@ const server = http.createServer((req, res) => {
   });
 });
 
-const port = process.env.PARROT_PORT || 3000;
+const port = process.env.PARROT_PORT || 80;
 server.listen(port, err => {
   if (err) throw err;
   console.log(`Listening on localhost:${port}`);
